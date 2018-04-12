@@ -27,11 +27,10 @@ namespace ScaleServiceStackConsole.ServiceModel
     }
 
     //=============== { Scale Weight } ==============//
-    [Route("/ScaleWeight")]
-    [Route("/ScaleWeight/{Data}")]
+    [Route("/ScaleWeight", Verbs = "GET")]
     public class ScaleWeight: IReturn<ScaleWeightResponse>
     {
-        public string Weight { get; set; }
+        // No Params
     }
 
     public class ScaleWeightResponse
@@ -43,7 +42,7 @@ namespace ScaleServiceStackConsole.ServiceModel
     [Route("/NextIngredient", Verbs = "GET")]
     public class NextIngredient: IReturn<NextIngredientResponse>
     {
-        //
+        // No Params
     }
     public class NextIngredientResponse
     {

@@ -1,5 +1,4 @@
-﻿using System;
-using ServiceStack;
+﻿using ServiceStack;
 using ScaleServiceStackConsole.ServiceModel;
 
 namespace ScaleServiceStackConsole.ServiceInterface
@@ -22,7 +21,9 @@ namespace ScaleServiceStackConsole.ServiceInterface
 
         public object Any(ScaleWeight request)
         {
-            return new ScaleWeightResponse { ScaleDataResult = $"{ request.Weight }" };
+            string ScaleDataResult = "newWeight";
+            return ScaleDataResult;
+
         }
         //================ { NextButton } ===============//
 
