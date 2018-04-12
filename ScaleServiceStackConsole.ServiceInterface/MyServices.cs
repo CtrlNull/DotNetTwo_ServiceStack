@@ -12,18 +12,24 @@ namespace ScaleServiceStackConsole.ServiceInterface
         {
             return new HelloResponse { Result = $"Hello, {request.Name}!" };
         }
-        //================= { Port Info } ================//
+        //================ { Port Info } ===============//
 
         public object Any(PortInfo request)
         {
             return new PortInfoReturn { PortResult = $"{request.Data}" };
         }
-
-        //=============== { Scale Weight }==============//
+        //=============== { Scale Weight } ==============//
 
         public object Any(ScaleWeight request)
         {
             return new ScaleWeightResponse { ScaleDataResult = $"{ request.Data }" };
+        }
+        //================ { NextButton } ===============//
+
+        public object Any(NextIngredient request)
+        {
+            string IngredientSwitched = "Finished";
+            return IngredientSwitched;
         }
 
     }

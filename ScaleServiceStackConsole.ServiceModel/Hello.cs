@@ -38,12 +38,28 @@ namespace ScaleServiceStackConsole.ServiceModel
     {
         public string ScaleDataResult { get; set; }
     }
+    //================ { NextButton } ===============//
 
-    //=============== { Scale Weight } ==============//
+    [Route("/NextIngredient", Verbs = "GET")]
+    public class NextIngredient: IReturn<NextIngredientResponse>
+    {
+        //
+    }
+    public class NextIngredientResponse
+    {
+        public string IngredientSwitched { get; set; }
+    }
+    //=============== { Done Mixing } ===============//
 
-
-
-
+    [Route("/DoneMixing/{Done}")]
+    public class DoneMixing: IReturn<DoneMixingReponse>
+    {
+        public string Done { get; set; }
+    }
+    public class DoneMixingReponse
+    {
+        public string DoneResult { get; set; }
+    }
 
 
 }
