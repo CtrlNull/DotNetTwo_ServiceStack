@@ -22,7 +22,7 @@ namespace ScaleServiceStackConsole.ServiceInterface
 
         public object Any(ScaleWeight request)
         {
-            return new ScaleWeightResponse { ScaleDataResult = $"{ request.Data }" };
+            return new ScaleWeightResponse { ScaleDataResult = $"{ request.Weight }" };
         }
         //================ { NextButton } ===============//
 
@@ -31,6 +31,11 @@ namespace ScaleServiceStackConsole.ServiceInterface
             string IngredientSwitched = "Finished";
             return IngredientSwitched;
         }
+        //=============== { Done Mixing } ===============//
 
+        public object Any(DoneMixing request)
+        {
+            return new DoneMixingReponse { DoneResult = $"{request.Done}" };
+        }
     }
 }

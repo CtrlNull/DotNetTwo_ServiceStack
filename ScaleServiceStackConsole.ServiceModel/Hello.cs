@@ -31,7 +31,7 @@ namespace ScaleServiceStackConsole.ServiceModel
     [Route("/ScaleWeight/{Data}")]
     public class ScaleWeight: IReturn<ScaleWeightResponse>
     {
-        public string Data { get; set; }
+        public string Weight { get; set; }
     }
 
     public class ScaleWeightResponse
