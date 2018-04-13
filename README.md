@@ -1,6 +1,7 @@
-# SelfHost
+# ServiceStack - .NetCore 2.0 - Serial Port Interaction
 
-## 
+## NOTE: THIS IS NOT A FINISHED PRODUCT/ START DATE 4/12/2018
+
 .NET Core 2.0 self-hosting Kestrel Console App
 
 .Net Core 2.0 using System.IO.Ports 
