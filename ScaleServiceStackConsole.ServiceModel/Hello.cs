@@ -2,6 +2,7 @@
 
 namespace ScaleServiceStackConsole.ServiceModel
 {
+    // http://localhost:5000/
     //================== { Test } ==================//
     [Route("/hello")]
     [Route("/hello/{Name}")]
