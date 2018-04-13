@@ -23,7 +23,12 @@ namespace ScaleServiceStackConsole.ServiceInterface
             _serialPort.PortName = "COM5";
             _serialPort.BaudRate = 9600;
             _serialPort.Parity = Parity.None;
-            
+
+            // Set the read/write timeouts
+            _serialPort.ReadTimeout = 500;
+            _serialPort.WriteTimeout = 500;
+
+
 
 
         }
