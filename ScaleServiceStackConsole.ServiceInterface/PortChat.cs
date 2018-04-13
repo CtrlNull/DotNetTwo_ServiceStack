@@ -11,8 +11,8 @@ namespace ScaleServiceStackConsole.ServiceInterface
 
         public static void Data()
         {
-            string name;
-            string message;
+            string name = "name";
+            string message = "message";
             StringComparer stringComparer = StringComparer.OrdinalIgnoreCase;
             Thread readThread = new Thread(Read);
 
