@@ -64,7 +64,19 @@ namespace ScaleServiceStackConsole.ServiceInterface
         }
 
         // Display Port values and prompt user to enter a port
+        public static string SetPortName(string defaultPortName)
+        {
+            string portName = "COM5"; // TODO: Change this to an empty string
+            
+            // TODO: Display avaliable ports here // Console.Write("Enter COM port value (Default: {0}): ", defaultPortName);
+            // TODO: Read inbound port selection // portName = Console.Readline();
 
+            if (portName == "" || (portName.ToLower()).StartsWith("com"))
+            {
+                portName = defaultPortName;
+            }
+            return portName;
+        }
 
 
     }
